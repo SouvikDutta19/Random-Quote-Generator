@@ -22,4 +22,20 @@ function selectrandom(){
 }
 nextbtn.addEventListener('click', selectrandom);
 
+const copyBtn = document.getElementById("copybtn");
+const displayBox = document.getElementById("displaybox");
+
+function copyText() {
+
+  const range = document.createRange();
+  range.selectNode(displayBox);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+
+  document.execCommand("copy");
+
+  window.getSelection().removeAllRanges();
+}
+
+copyBtn.addEventListener("click", copyText);
 
