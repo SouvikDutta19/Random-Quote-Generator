@@ -1,103 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
 
 * {
-    font-family: 'Agdasima', sans-serif;
+  font-family: 'Agdasima', sans-serif;
 }
 
 body {
-    background: linear-gradient(272deg,
-            #662d8c, #ed1e79);
+  background: linear-gradient(272deg, #662d8c, #ed1e79);
 }
 
 .flex {
-    display: flex;
-    margin: auto;
-    justify-content: center;
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }
 
 .container {
-    background-color: white;
-    width: 40vw;
-    height: 50vh;
-    margin-top: 20vh;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: white;
+  width: 40vw;
+  height: 50vh;
+  margin-top: 20vh;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .quotebox {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 #rqtext {
-    margin: 5px;
-    font-size: 2rem;
+  margin: 5px;
+  font-size: 2rem;
 }
 
 #displaybox {
-    width: 470px;
-    height: 200px;
-    margin-top: 20px;
-    padding: 8px;
-    display: block;
-    border: none;
-    border-radius: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    font-size: 1.7rem;
-    text-align: left;  
+  width: 470px;
+  height: 200px;
+  margin-top: 20px;
+  padding: 8px;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  font-size: 1.7rem;
+  text-align: left;
 }
 
-.btndesign{
-    width: 110px;
-    height: 40px;
-    align-items: center;
-    appearance: none;
-    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-    border: 0;
-    border-radius: 10px;
-    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: "JetBrains Mono", monospace;
-    height: 48px;
-    justify-content: center;
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    transition: box-shadow .15s, transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow, transform;
-    font-size: 18px;
-
+.btndesign {
+  width: 110px;
+  height: 40px;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+    rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
 }
+
 .btndesign:focus {
-    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+    #3c4fe0 0 -3px 0 inset;
 }
 
 .btndesign:hover {
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-    transform: translateY(-2px);
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
 }
 
 .btndesign:active {
-    box-shadow: #3c4fe0 0 3px 7px inset;
-    transform: translateY(2px);
-}
-#nextbtn{
-    justify-content: space-between;
-    margin: 10px 20px 10px 130px;
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
 }
 
-#copybtn{
-    justify-content: space-between;
-    margin: 10px 132px 10px 0px;
+#nextbtn {
+  justify-content: space-between;
+  margin: 10px 20px 10px 130px;
+}
+
+#copybtn {
+  justify-content: space-between;
+  margin: 10px 132px 10px 0px;
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    background: linear-gradient(272deg, #662d8c, #ed1e79);
+    /* background: no-repeat; */
+  }
+
+  .container {
+    width: 80vw;
+    height: 60vh;
+    margin-top: 10vh;
+  }
+
+  .quotebox {
+    width: 90%;
+    height: 70%;
+  }
+
+  #displaybox {
+    width: 90%;
+    height: 70%;
+    margin-top: 20px;
+    padding: 25px;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  #copybtn {
+    margin: 10px 0px 10px 15px;
+  }
+
+  #nextbtn {
+    margin: 7px 23px 35px 115px;
+  }
 }
